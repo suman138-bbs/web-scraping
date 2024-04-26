@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
-# Function to extract data
+
 def extract_data(div):
     company_name_div = div.find('div', class_='qBF1Pd fontHeadlineSmall') 
     company_name = company_name_div.text.strip() if company_name_div else "N/A"
